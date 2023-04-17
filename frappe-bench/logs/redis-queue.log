@@ -35,3 +35,479 @@
 2074:M 17 Apr 2023 03:33:00.060 * Background saving started by pid 5381
 5381:C 17 Apr 2023 03:33:00.060 # Failed opening the temp RDB file temp-5381.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
 2074:M 17 Apr 2023 03:33:00.161 # Background saving error
+2074:M 17 Apr 2023 03:33:06.071 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:33:06.071 * Background saving started by pid 5423
+5423:C 17 Apr 2023 03:33:06.071 # Failed opening the temp RDB file temp-5423.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:33:06.171 # Background saving error
+2074:M 17 Apr 2023 03:33:12.084 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:33:12.084 * Background saving started by pid 5424
+5424:C 17 Apr 2023 03:33:12.084 # Failed opening the temp RDB file temp-5424.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:33:12.185 # Background saving error
+2074:M 17 Apr 2023 03:33:18.098 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:33:18.098 * Background saving started by pid 5425
+5425:C 17 Apr 2023 03:33:18.098 # Failed opening the temp RDB file temp-5425.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:33:18.198 # Background saving error
+2074:M 17 Apr 2023 03:33:24.010 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:33:24.011 * Background saving started by pid 5426
+5426:C 17 Apr 2023 03:33:24.011 # Failed opening the temp RDB file temp-5426.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:33:24.111 # Background saving error
+2074:M 17 Apr 2023 03:33:30.023 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:33:30.023 * Background saving started by pid 5427
+5427:C 17 Apr 2023 03:33:30.023 # Failed opening the temp RDB file temp-5427.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:33:30.124 # Background saving error
+2074:M 17 Apr 2023 03:33:36.037 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:33:36.037 * Background saving started by pid 5428
+5428:C 17 Apr 2023 03:33:36.037 # Failed opening the temp RDB file temp-5428.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:33:36.137 # Background saving error
+2074:M 17 Apr 2023 03:33:42.049 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:33:42.049 * Background saving started by pid 5429
+5429:C 17 Apr 2023 03:33:42.049 # Failed opening the temp RDB file temp-5429.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:33:42.149 # Background saving error
+2074:M 17 Apr 2023 03:33:48.061 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:33:48.062 * Background saving started by pid 5514
+5514:C 17 Apr 2023 03:33:48.062 # Failed opening the temp RDB file temp-5514.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:33:48.162 # Background saving error
+2074:M 17 Apr 2023 03:33:54.074 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:33:54.075 * Background saving started by pid 5515
+5515:C 17 Apr 2023 03:33:54.075 # Failed opening the temp RDB file temp-5515.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:33:54.175 # Background saving error
+2074:M 17 Apr 2023 03:34:00.086 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:34:00.087 * Background saving started by pid 5516
+5516:C 17 Apr 2023 03:34:00.087 # Failed opening the temp RDB file temp-5516.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:34:00.187 # Background saving error
+2074:M 17 Apr 2023 03:34:06.098 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:34:06.098 * Background saving started by pid 5517
+5517:C 17 Apr 2023 03:34:06.098 # Failed opening the temp RDB file temp-5517.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:34:06.199 # Background saving error
+2074:M 17 Apr 2023 03:34:12.010 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:34:12.010 * Background saving started by pid 5518
+5518:C 17 Apr 2023 03:34:12.010 # Failed opening the temp RDB file temp-5518.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:34:12.110 # Background saving error
+2074:M 17 Apr 2023 03:34:18.022 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:34:18.023 * Background saving started by pid 5603
+5603:C 17 Apr 2023 03:34:18.023 # Failed opening the temp RDB file temp-5603.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:34:18.123 # Background saving error
+2074:M 17 Apr 2023 03:34:24.035 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:34:24.036 * Background saving started by pid 5604
+5604:C 17 Apr 2023 03:34:24.036 # Failed opening the temp RDB file temp-5604.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:34:24.136 # Background saving error
+2074:M 17 Apr 2023 03:34:30.049 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:34:30.049 * Background saving started by pid 5605
+5605:C 17 Apr 2023 03:34:30.049 # Failed opening the temp RDB file temp-5605.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:34:30.149 # Background saving error
+2074:M 17 Apr 2023 03:34:36.061 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:34:36.062 * Background saving started by pid 5606
+5606:C 17 Apr 2023 03:34:36.062 # Failed opening the temp RDB file temp-5606.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:34:36.162 # Background saving error
+2074:M 17 Apr 2023 03:34:42.074 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:34:42.074 * Background saving started by pid 5607
+5607:C 17 Apr 2023 03:34:42.075 # Failed opening the temp RDB file temp-5607.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:34:42.175 # Background saving error
+2074:M 17 Apr 2023 03:34:48.088 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:34:48.088 * Background saving started by pid 5608
+5608:C 17 Apr 2023 03:34:48.088 # Failed opening the temp RDB file temp-5608.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:34:48.188 # Background saving error
+2074:M 17 Apr 2023 03:34:54.001 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:34:54.002 * Background saving started by pid 5609
+5609:C 17 Apr 2023 03:34:54.002 # Failed opening the temp RDB file temp-5609.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:34:54.102 # Background saving error
+2074:M 17 Apr 2023 03:34:59.013 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:34:59.013 * Background saving started by pid 5610
+5610:C 17 Apr 2023 03:34:59.013 # Failed opening the temp RDB file temp-5610.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:34:59.114 # Background saving error
+2074:M 17 Apr 2023 03:35:05.026 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:35:05.027 * Background saving started by pid 5611
+5611:C 17 Apr 2023 03:35:05.027 # Failed opening the temp RDB file temp-5611.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:35:05.127 # Background saving error
+2074:M 17 Apr 2023 03:35:11.039 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:35:11.039 * Background saving started by pid 5614
+5614:C 17 Apr 2023 03:35:11.039 # Failed opening the temp RDB file temp-5614.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:35:11.139 # Background saving error
+2074:M 17 Apr 2023 03:35:17.051 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:35:17.052 * Background saving started by pid 5616
+5616:C 17 Apr 2023 03:35:17.052 # Failed opening the temp RDB file temp-5616.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:35:17.152 # Background saving error
+2074:M 17 Apr 2023 03:35:23.063 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:35:23.064 * Background saving started by pid 5618
+5618:C 17 Apr 2023 03:35:23.064 # Failed opening the temp RDB file temp-5618.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:35:23.164 # Background saving error
+2074:M 17 Apr 2023 03:35:29.076 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:35:29.076 * Background saving started by pid 5619
+5619:C 17 Apr 2023 03:35:29.077 # Failed opening the temp RDB file temp-5619.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:35:29.177 # Background saving error
+2074:M 17 Apr 2023 03:35:35.087 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:35:35.087 * Background saving started by pid 5620
+5620:C 17 Apr 2023 03:35:35.087 # Failed opening the temp RDB file temp-5620.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:35:35.187 # Background saving error
+2074:M 17 Apr 2023 03:35:41.097 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:35:41.098 * Background saving started by pid 5621
+5621:C 17 Apr 2023 03:35:41.098 # Failed opening the temp RDB file temp-5621.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:35:41.198 # Background saving error
+2074:M 17 Apr 2023 03:35:47.009 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:35:47.009 * Background saving started by pid 5693
+5693:C 17 Apr 2023 03:35:47.009 # Failed opening the temp RDB file temp-5693.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:35:47.109 # Background saving error
+2074:M 17 Apr 2023 03:35:53.021 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:35:53.021 * Background saving started by pid 5694
+5694:C 17 Apr 2023 03:35:53.021 # Failed opening the temp RDB file temp-5694.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:35:53.121 # Background saving error
+2074:M 17 Apr 2023 03:35:59.033 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:35:59.034 * Background saving started by pid 5695
+5695:C 17 Apr 2023 03:35:59.034 # Failed opening the temp RDB file temp-5695.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:35:59.134 # Background saving error
+2074:M 17 Apr 2023 03:36:05.047 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:36:05.047 * Background saving started by pid 5696
+5696:C 17 Apr 2023 03:36:05.047 # Failed opening the temp RDB file temp-5696.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:36:05.147 # Background saving error
+2074:M 17 Apr 2023 03:36:11.059 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:36:11.059 * Background saving started by pid 5697
+5697:C 17 Apr 2023 03:36:11.059 # Failed opening the temp RDB file temp-5697.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:36:11.159 # Background saving error
+2074:M 17 Apr 2023 03:36:17.071 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:36:17.072 * Background saving started by pid 5698
+5698:C 17 Apr 2023 03:36:17.072 # Failed opening the temp RDB file temp-5698.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:36:17.172 # Background saving error
+2074:M 17 Apr 2023 03:36:23.085 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:36:23.085 * Background saving started by pid 5703
+5703:C 17 Apr 2023 03:36:23.085 # Failed opening the temp RDB file temp-5703.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:36:23.185 # Background saving error
+2074:M 17 Apr 2023 03:36:29.000 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:36:29.001 * Background saving started by pid 5704
+5704:C 17 Apr 2023 03:36:29.001 # Failed opening the temp RDB file temp-5704.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:36:29.101 # Background saving error
+2074:M 17 Apr 2023 03:36:34.011 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:36:34.012 * Background saving started by pid 5705
+5705:C 17 Apr 2023 03:36:34.012 # Failed opening the temp RDB file temp-5705.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:36:34.113 # Background saving error
+2074:M 17 Apr 2023 03:36:40.024 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:36:40.024 * Background saving started by pid 5706
+5706:C 17 Apr 2023 03:36:40.025 # Failed opening the temp RDB file temp-5706.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:36:40.125 # Background saving error
+2074:M 17 Apr 2023 03:36:46.036 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:36:46.036 * Background saving started by pid 5707
+5707:C 17 Apr 2023 03:36:46.036 # Failed opening the temp RDB file temp-5707.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:36:46.136 # Background saving error
+2074:M 17 Apr 2023 03:36:52.049 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:36:52.049 * Background saving started by pid 5708
+5708:C 17 Apr 2023 03:36:52.050 # Failed opening the temp RDB file temp-5708.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:36:52.150 # Background saving error
+2074:M 17 Apr 2023 03:36:58.061 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:36:58.061 * Background saving started by pid 5709
+5709:C 17 Apr 2023 03:36:58.061 # Failed opening the temp RDB file temp-5709.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:36:58.161 # Background saving error
+2074:M 17 Apr 2023 03:37:04.075 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:37:04.075 * Background saving started by pid 5735
+5735:C 17 Apr 2023 03:37:04.075 # Failed opening the temp RDB file temp-5735.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:37:04.175 # Background saving error
+2074:M 17 Apr 2023 03:37:10.088 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:37:10.088 * Background saving started by pid 5741
+5741:C 17 Apr 2023 03:37:10.088 # Failed opening the temp RDB file temp-5741.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:37:10.189 # Background saving error
+2074:M 17 Apr 2023 03:37:16.100 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:37:16.100 * Background saving started by pid 5749
+5749:C 17 Apr 2023 03:37:16.100 # Failed opening the temp RDB file temp-5749.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:37:16.200 # Background saving error
+2074:M 17 Apr 2023 03:37:22.011 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:37:22.011 * Background saving started by pid 5755
+5755:C 17 Apr 2023 03:37:22.011 # Failed opening the temp RDB file temp-5755.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:37:22.111 # Background saving error
+2074:M 17 Apr 2023 03:37:28.023 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:37:28.023 * Background saving started by pid 5766
+5766:C 17 Apr 2023 03:37:28.023 # Failed opening the temp RDB file temp-5766.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:37:28.123 # Background saving error
+2074:M 17 Apr 2023 03:37:34.035 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:37:34.035 * Background saving started by pid 5772
+5772:C 17 Apr 2023 03:37:34.036 # Failed opening the temp RDB file temp-5772.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:37:34.136 # Background saving error
+2074:M 17 Apr 2023 03:37:40.049 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:37:40.049 * Background saving started by pid 5778
+5778:C 17 Apr 2023 03:37:40.049 # Failed opening the temp RDB file temp-5778.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:37:40.149 # Background saving error
+2074:M 17 Apr 2023 03:37:46.061 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:37:46.061 * Background saving started by pid 5784
+5784:C 17 Apr 2023 03:37:46.062 # Failed opening the temp RDB file temp-5784.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:37:46.162 # Background saving error
+2074:M 17 Apr 2023 03:37:52.072 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:37:52.073 * Background saving started by pid 5790
+5790:C 17 Apr 2023 03:37:52.073 # Failed opening the temp RDB file temp-5790.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:37:52.173 # Background saving error
+2074:M 17 Apr 2023 03:37:58.085 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:37:58.085 * Background saving started by pid 5801
+5801:C 17 Apr 2023 03:37:58.085 # Failed opening the temp RDB file temp-5801.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:37:58.186 # Background saving error
+2074:M 17 Apr 2023 03:38:04.098 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:38:04.098 * Background saving started by pid 5803
+5803:C 17 Apr 2023 03:38:04.098 # Failed opening the temp RDB file temp-5803.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:38:04.198 # Background saving error
+2074:M 17 Apr 2023 03:38:10.012 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:38:10.012 * Background saving started by pid 5804
+5804:C 17 Apr 2023 03:38:10.012 # Failed opening the temp RDB file temp-5804.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:38:10.112 # Background saving error
+2074:M 17 Apr 2023 03:38:16.024 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:38:16.024 * Background saving started by pid 5805
+5805:C 17 Apr 2023 03:38:16.024 # Failed opening the temp RDB file temp-5805.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:38:16.124 # Background saving error
+2074:M 17 Apr 2023 03:38:22.035 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:38:22.036 * Background saving started by pid 5806
+5806:C 17 Apr 2023 03:38:22.036 # Failed opening the temp RDB file temp-5806.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:38:22.136 # Background saving error
+2074:M 17 Apr 2023 03:38:28.047 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:38:28.048 * Background saving started by pid 5807
+5807:C 17 Apr 2023 03:38:28.048 # Failed opening the temp RDB file temp-5807.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:38:28.148 # Background saving error
+2074:M 17 Apr 2023 03:38:34.060 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:38:34.060 * Background saving started by pid 5808
+5808:C 17 Apr 2023 03:38:34.060 # Failed opening the temp RDB file temp-5808.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:38:34.160 # Background saving error
+2074:M 17 Apr 2023 03:38:40.072 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:38:40.072 * Background saving started by pid 5809
+5809:C 17 Apr 2023 03:38:40.072 # Failed opening the temp RDB file temp-5809.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:38:40.173 # Background saving error
+2074:M 17 Apr 2023 03:38:46.084 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:38:46.084 * Background saving started by pid 5810
+5810:C 17 Apr 2023 03:38:46.084 # Failed opening the temp RDB file temp-5810.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:38:46.185 # Background saving error
+2074:M 17 Apr 2023 03:38:52.097 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:38:52.098 * Background saving started by pid 5811
+5811:C 17 Apr 2023 03:38:52.098 # Failed opening the temp RDB file temp-5811.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:38:52.198 # Background saving error
+2074:M 17 Apr 2023 03:38:58.011 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:38:58.011 * Background saving started by pid 5812
+5812:C 17 Apr 2023 03:38:58.011 # Failed opening the temp RDB file temp-5812.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:38:58.111 # Background saving error
+2074:M 17 Apr 2023 03:39:04.024 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:39:04.024 * Background saving started by pid 6305
+6305:C 17 Apr 2023 03:39:04.024 # Failed opening the temp RDB file temp-6305.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:39:04.124 # Background saving error
+2074:M 17 Apr 2023 03:39:10.036 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:39:10.036 * Background saving started by pid 6321
+6321:C 17 Apr 2023 03:39:10.037 # Failed opening the temp RDB file temp-6321.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:39:10.137 # Background saving error
+2074:M 17 Apr 2023 03:39:16.049 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:39:16.049 * Background saving started by pid 6337
+6337:C 17 Apr 2023 03:39:16.049 # Failed opening the temp RDB file temp-6337.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:39:16.149 # Background saving error
+2074:M 17 Apr 2023 03:39:22.061 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:39:22.062 * Background saving started by pid 6405
+6405:C 17 Apr 2023 03:39:22.063 # Failed opening the temp RDB file temp-6405.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:39:22.162 # Background saving error
+2074:M 17 Apr 2023 03:39:28.076 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:39:28.076 * Background saving started by pid 6436
+6436:C 17 Apr 2023 03:39:28.076 # Failed opening the temp RDB file temp-6436.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:39:28.177 # Background saving error
+2074:M 17 Apr 2023 03:39:34.089 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:39:34.090 * Background saving started by pid 6452
+6452:C 17 Apr 2023 03:39:34.090 # Failed opening the temp RDB file temp-6452.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:39:34.190 # Background saving error
+2074:M 17 Apr 2023 03:39:40.002 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:39:40.002 * Background saving started by pid 6468
+6468:C 17 Apr 2023 03:39:40.002 # Failed opening the temp RDB file temp-6468.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:39:40.102 # Background saving error
+2074:M 17 Apr 2023 03:39:45.013 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:39:45.013 * Background saving started by pid 6487
+6487:C 17 Apr 2023 03:39:45.014 # Failed opening the temp RDB file temp-6487.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:39:45.114 # Background saving error
+2074:M 17 Apr 2023 03:39:51.026 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:39:51.026 * Background saving started by pid 6503
+6503:C 17 Apr 2023 03:39:51.026 # Failed opening the temp RDB file temp-6503.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:39:51.126 # Background saving error
+2074:M 17 Apr 2023 03:39:57.038 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:39:57.039 * Background saving started by pid 6519
+6519:C 17 Apr 2023 03:39:57.039 # Failed opening the temp RDB file temp-6519.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:39:57.139 # Background saving error
+2074:M 17 Apr 2023 03:40:03.051 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:40:03.051 * Background saving started by pid 6538
+6538:C 17 Apr 2023 03:40:03.051 # Failed opening the temp RDB file temp-6538.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:40:03.153 # Background saving error
+2074:M 17 Apr 2023 03:40:09.065 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:40:09.065 * Background saving started by pid 6539
+6539:C 17 Apr 2023 03:40:09.065 # Failed opening the temp RDB file temp-6539.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:40:09.165 # Background saving error
+2074:M 17 Apr 2023 03:40:15.076 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:40:15.076 * Background saving started by pid 6540
+6540:C 17 Apr 2023 03:40:15.076 # Failed opening the temp RDB file temp-6540.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:40:15.176 # Background saving error
+2074:M 17 Apr 2023 03:40:21.087 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:40:21.087 * Background saving started by pid 6541
+6541:C 17 Apr 2023 03:40:21.088 # Failed opening the temp RDB file temp-6541.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:40:21.188 # Background saving error
+2074:M 17 Apr 2023 03:40:27.099 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:40:27.100 * Background saving started by pid 6548
+6548:C 17 Apr 2023 03:40:27.100 # Failed opening the temp RDB file temp-6548.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:40:27.200 # Background saving error
+2074:M 17 Apr 2023 03:40:33.011 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:40:33.011 * Background saving started by pid 6549
+6549:C 17 Apr 2023 03:40:33.011 # Failed opening the temp RDB file temp-6549.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:40:33.111 # Background saving error
+2074:M 17 Apr 2023 03:40:39.023 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:40:39.023 * Background saving started by pid 6550
+6550:C 17 Apr 2023 03:40:39.023 # Failed opening the temp RDB file temp-6550.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:40:39.123 # Background saving error
+2074:M 17 Apr 2023 03:40:45.038 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:40:45.038 * Background saving started by pid 6551
+6551:C 17 Apr 2023 03:40:45.038 # Failed opening the temp RDB file temp-6551.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:40:45.138 # Background saving error
+2074:M 17 Apr 2023 03:40:51.049 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:40:51.050 * Background saving started by pid 6552
+6552:C 17 Apr 2023 03:40:51.050 # Failed opening the temp RDB file temp-6552.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:40:51.150 # Background saving error
+2074:M 17 Apr 2023 03:40:57.065 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:40:57.065 * Background saving started by pid 6553
+6553:C 17 Apr 2023 03:40:57.065 # Failed opening the temp RDB file temp-6553.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:40:57.165 # Background saving error
+2074:M 17 Apr 2023 03:41:03.077 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:41:03.077 * Background saving started by pid 6625
+6625:C 17 Apr 2023 03:41:03.077 # Failed opening the temp RDB file temp-6625.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:41:03.177 # Background saving error
+2074:M 17 Apr 2023 03:41:09.091 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:41:09.091 * Background saving started by pid 6647
+6647:C 17 Apr 2023 03:41:09.091 # Failed opening the temp RDB file temp-6647.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:41:09.191 # Background saving error
+2074:M 17 Apr 2023 03:41:15.003 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:41:15.004 * Background saving started by pid 6663
+6663:C 17 Apr 2023 03:41:15.004 # Failed opening the temp RDB file temp-6663.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:41:15.104 # Background saving error
+2074:M 17 Apr 2023 03:41:21.015 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:41:21.015 * Background saving started by pid 6679
+6679:C 17 Apr 2023 03:41:21.016 # Failed opening the temp RDB file temp-6679.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:41:21.116 # Background saving error
+2074:M 17 Apr 2023 03:41:27.028 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:41:27.029 * Background saving started by pid 6695
+6695:C 17 Apr 2023 03:41:27.029 # Failed opening the temp RDB file temp-6695.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:41:27.129 # Background saving error
+2074:M 17 Apr 2023 03:41:33.040 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:41:33.040 * Background saving started by pid 6726
+6726:C 17 Apr 2023 03:41:33.040 # Failed opening the temp RDB file temp-6726.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:41:33.140 # Background saving error
+2074:M 17 Apr 2023 03:41:39.051 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:41:39.051 * Background saving started by pid 6742
+6742:C 17 Apr 2023 03:41:39.052 # Failed opening the temp RDB file temp-6742.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:41:39.152 # Background saving error
+2074:M 17 Apr 2023 03:41:45.065 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:41:45.065 * Background saving started by pid 6758
+6758:C 17 Apr 2023 03:41:45.066 # Failed opening the temp RDB file temp-6758.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:41:45.166 # Background saving error
+2074:M 17 Apr 2023 03:41:51.078 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:41:51.079 * Background saving started by pid 6774
+6774:C 17 Apr 2023 03:41:51.079 # Failed opening the temp RDB file temp-6774.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:41:51.179 # Background saving error
+2074:M 17 Apr 2023 03:41:57.092 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:41:57.092 * Background saving started by pid 6790
+6790:C 17 Apr 2023 03:41:57.092 # Failed opening the temp RDB file temp-6790.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:41:57.192 # Background saving error
+2074:M 17 Apr 2023 03:42:03.003 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:42:03.004 * Background saving started by pid 6809
+6809:C 17 Apr 2023 03:42:03.004 # Failed opening the temp RDB file temp-6809.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:42:03.105 # Background saving error
+2074:M 17 Apr 2023 03:42:09.016 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:42:09.016 * Background saving started by pid 6810
+6810:C 17 Apr 2023 03:42:09.016 # Failed opening the temp RDB file temp-6810.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:42:09.116 # Background saving error
+2074:M 17 Apr 2023 03:42:15.027 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:42:15.028 * Background saving started by pid 6811
+6811:C 17 Apr 2023 03:42:15.028 # Failed opening the temp RDB file temp-6811.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:42:15.128 # Background saving error
+2074:M 17 Apr 2023 03:42:21.040 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:42:21.040 * Background saving started by pid 6812
+6812:C 17 Apr 2023 03:42:21.040 # Failed opening the temp RDB file temp-6812.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:42:21.140 # Background saving error
+2074:M 17 Apr 2023 03:42:27.052 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:42:27.052 * Background saving started by pid 6813
+6813:C 17 Apr 2023 03:42:27.052 # Failed opening the temp RDB file temp-6813.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:42:27.152 # Background saving error
+2074:M 17 Apr 2023 03:42:33.065 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:42:33.066 * Background saving started by pid 6815
+6815:C 17 Apr 2023 03:42:33.066 # Failed opening the temp RDB file temp-6815.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:42:33.166 # Background saving error
+2074:M 17 Apr 2023 03:42:39.079 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:42:39.080 * Background saving started by pid 6816
+6816:C 17 Apr 2023 03:42:39.080 # Failed opening the temp RDB file temp-6816.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:42:39.180 # Background saving error
+2074:M 17 Apr 2023 03:42:45.091 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:42:45.092 * Background saving started by pid 6817
+6817:C 17 Apr 2023 03:42:45.092 # Failed opening the temp RDB file temp-6817.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:42:45.192 # Background saving error
+2074:M 17 Apr 2023 03:42:51.003 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:42:51.003 * Background saving started by pid 6818
+6818:C 17 Apr 2023 03:42:51.004 # Failed opening the temp RDB file temp-6818.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:42:51.104 # Background saving error
+2074:M 17 Apr 2023 03:42:57.015 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:42:57.015 * Background saving started by pid 6819
+6819:C 17 Apr 2023 03:42:57.015 # Failed opening the temp RDB file temp-6819.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:42:57.115 # Background saving error
+2074:M 17 Apr 2023 03:43:03.027 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:43:03.027 * Background saving started by pid 6886
+6886:C 17 Apr 2023 03:43:03.027 # Failed opening the temp RDB file temp-6886.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:43:03.127 # Background saving error
+2074:M 17 Apr 2023 03:43:09.039 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:43:09.040 * Background saving started by pid 6912
+6912:C 17 Apr 2023 03:43:09.040 # Failed opening the temp RDB file temp-6912.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:43:09.140 # Background saving error
+2074:M 17 Apr 2023 03:43:15.052 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:43:15.052 * Background saving started by pid 6928
+6928:C 17 Apr 2023 03:43:15.052 # Failed opening the temp RDB file temp-6928.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:43:15.152 # Background saving error
+2074:M 17 Apr 2023 03:43:21.064 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:43:21.064 * Background saving started by pid 6944
+6944:C 17 Apr 2023 03:43:21.064 # Failed opening the temp RDB file temp-6944.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:43:21.164 # Background saving error
+2074:M 17 Apr 2023 03:43:27.076 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:43:27.076 * Background saving started by pid 6960
+6960:C 17 Apr 2023 03:43:27.076 # Failed opening the temp RDB file temp-6960.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:43:27.176 # Background saving error
+2074:M 17 Apr 2023 03:43:33.088 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:43:33.088 * Background saving started by pid 6991
+6991:C 17 Apr 2023 03:43:33.088 # Failed opening the temp RDB file temp-6991.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:43:33.189 # Background saving error
+2074:M 17 Apr 2023 03:43:39.099 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:43:39.099 * Background saving started by pid 7007
+7007:C 17 Apr 2023 03:43:39.100 # Failed opening the temp RDB file temp-7007.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:43:39.200 # Background saving error
+2074:M 17 Apr 2023 03:43:45.011 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:43:45.012 * Background saving started by pid 7023
+7023:C 17 Apr 2023 03:43:45.012 # Failed opening the temp RDB file temp-7023.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:43:45.112 # Background saving error
+2074:M 17 Apr 2023 03:43:51.023 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:43:51.024 * Background saving started by pid 7039
+7039:C 17 Apr 2023 03:43:51.024 # Failed opening the temp RDB file temp-7039.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:43:51.124 # Background saving error
+2074:M 17 Apr 2023 03:43:57.036 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:43:57.036 * Background saving started by pid 7055
+7055:C 17 Apr 2023 03:43:57.036 # Failed opening the temp RDB file temp-7055.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:43:57.136 # Background saving error
+2074:M 17 Apr 2023 03:44:03.047 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:44:03.047 * Background saving started by pid 7074
+7074:C 17 Apr 2023 03:44:03.047 # Failed opening the temp RDB file temp-7074.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:44:03.148 # Background saving error
+2074:M 17 Apr 2023 03:44:09.059 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:44:09.059 * Background saving started by pid 7075
+7075:C 17 Apr 2023 03:44:09.060 # Failed opening the temp RDB file temp-7075.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:44:09.160 # Background saving error
+2074:M 17 Apr 2023 03:44:15.072 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:44:15.073 * Background saving started by pid 7076
+7076:C 17 Apr 2023 03:44:15.073 # Failed opening the temp RDB file temp-7076.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:44:15.173 # Background saving error
+2074:M 17 Apr 2023 03:44:21.082 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:44:21.082 * Background saving started by pid 7077
+7077:C 17 Apr 2023 03:44:21.083 # Failed opening the temp RDB file temp-7077.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:44:21.183 # Background saving error
+2074:M 17 Apr 2023 03:44:27.094 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:44:27.094 * Background saving started by pid 7214
+7214:C 17 Apr 2023 03:44:27.095 # Failed opening the temp RDB file temp-7214.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:44:27.195 # Background saving error
+2074:M 17 Apr 2023 03:44:33.005 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:44:33.005 * Background saving started by pid 7215
+7215:C 17 Apr 2023 03:44:33.005 # Failed opening the temp RDB file temp-7215.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:44:33.105 # Background saving error
+2074:M 17 Apr 2023 03:44:39.016 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:44:39.016 * Background saving started by pid 7216
+7216:C 17 Apr 2023 03:44:39.017 # Failed opening the temp RDB file temp-7216.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:44:39.117 # Background saving error
+2074:M 17 Apr 2023 03:44:45.028 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:44:45.028 * Background saving started by pid 7217
+7217:C 17 Apr 2023 03:44:45.028 # Failed opening the temp RDB file temp-7217.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:44:45.129 # Background saving error
+2074:M 17 Apr 2023 03:44:51.039 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:44:51.040 * Background saving started by pid 7218
+7218:C 17 Apr 2023 03:44:51.040 # Failed opening the temp RDB file temp-7218.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:44:51.140 # Background saving error

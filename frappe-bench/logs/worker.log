@@ -345,3 +345,729 @@ fatal: No remote configured to list refs from.
 2023-04-17 03:32:09,588 opt-bitnami-erpnext-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erpnext', user='Administrator') (d5f7a55f-5a63-4ee7-a973-7054afe8d667)
 2023-04-17 03:32:09,883 opt-bitnami-erpnext-frappe-bench:default: Job OK (d5f7a55f-5a63-4ee7-a973-7054afe8d667)
 2023-04-17 03:32:09,883 Result is kept for 600 seconds
+2023-04-17 03:36:34,714 Worker rq:worker:65d163b771464eb6833ed305fa70754f.erpnext-1-vm.4312.opt-bitnami-erpnext-frappe-bench:short: found an unhandled exception, quitting...
+Traceback (most recent call last):
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 605, in work
+    result = self.dequeue_job_and_maintain_ttl(timeout)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 669, in dequeue_job_and_maintain_ttl
+    self.heartbeat()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 717, in heartbeat
+    connection.expire(self.key, timeout)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1591, in expire
+    return self.execute_command('EXPIRE', name, time)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+Traceback (most recent call last):
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3911, in _execute_transaction
+    response = self.parse_response(connection, '_')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ExecAbortError: Transaction discarded because of previous errors.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 242, in start_worker
+    worker.work(
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+    self.register_death()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4019, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3914, in _execute_transaction
+    raise errors[0][1]
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3904, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: Command # 1 (SREM rq:workers rq:worker:65d163b771464eb6833ed305fa70754f.erpnext-1-vm.4312.opt-bitnami-erpnext-frappe-bench:short) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+Traceback (most recent call last):
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 225, in start_worker
+    redis_connection = get_redis_conn(username=rq_username, password=rq_password)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[91mWrong credentials used for default user. You can reset credentials using `bench create-rq-users` CLI and restart the server[0m
+2023-04-17 03:37:44,559 Worker rq:worker:5f1ed8c1e9a743bd84f724469a1539a8.erpnext-1-vm.4288.opt-bitnami-erpnext-frappe-bench:long: found an unhandled exception, quitting...
+Traceback (most recent call last):
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 605, in work
+    result = self.dequeue_job_and_maintain_ttl(timeout)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 669, in dequeue_job_and_maintain_ttl
+    self.heartbeat()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 717, in heartbeat
+    connection.expire(self.key, timeout)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1591, in expire
+    return self.execute_command('EXPIRE', name, time)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+Traceback (most recent call last):
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3911, in _execute_transaction
+    response = self.parse_response(connection, '_')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ExecAbortError: Transaction discarded because of previous errors.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 242, in start_worker
+    worker.work(
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+    self.register_death()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4019, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3914, in _execute_transaction
+    raise errors[0][1]
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3904, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: Command # 1 (SREM rq:workers rq:worker:5f1ed8c1e9a743bd84f724469a1539a8.erpnext-1-vm.4288.opt-bitnami-erpnext-frappe-bench:long) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2023-04-17 03:38:54,904 Worker rq:worker:96e01a18970c4aa3b63871cee88fd5ca.erpnext-1-vm.4297.opt-bitnami-erpnext-frappe-bench:default: found an unhandled exception, quitting...
+Traceback (most recent call last):
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 605, in work
+    result = self.dequeue_job_and_maintain_ttl(timeout)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 669, in dequeue_job_and_maintain_ttl
+    self.heartbeat()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 717, in heartbeat
+    connection.expire(self.key, timeout)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1591, in expire
+    return self.execute_command('EXPIRE', name, time)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+Traceback (most recent call last):
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3911, in _execute_transaction
+    response = self.parse_response(connection, '_')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ExecAbortError: Transaction discarded because of previous errors.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 242, in start_worker
+    worker.work(
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+    self.register_death()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 4019, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3914, in _execute_transaction
+    raise errors[0][1]
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3904, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: Command # 1 (SREM rq:workers rq:worker:96e01a18970c4aa3b63871cee88fd5ca.erpnext-1-vm.4297.opt-bitnami-erpnext-frappe-bench:default) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+Traceback (most recent call last):
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 225, in start_worker
+    redis_connection = get_redis_conn(username=rq_username, password=rq_password)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[91mWrong credentials used for default user. You can reset credentials using `bench create-rq-users` CLI and restart the server[0m
+Traceback (most recent call last):
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 225, in start_worker
+    redis_connection = get_redis_conn(username=rq_username, password=rq_password)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[91mWrong credentials used for default user. You can reset credentials using `bench create-rq-users` CLI and restart the server[0m
+Traceback (most recent call last):
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 225, in start_worker
+    redis_connection = get_redis_conn(username=rq_username, password=rq_password)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[91mWrong credentials used for default user. You can reset credentials using `bench create-rq-users` CLI and restart the server[0m
+Traceback (most recent call last):
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 225, in start_worker
+    redis_connection = get_redis_conn(username=rq_username, password=rq_password)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[91mWrong credentials used for default user. You can reset credentials using `bench create-rq-users` CLI and restart the server[0m
+Traceback (most recent call last):
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 225, in start_worker
+    redis_connection = get_redis_conn(username=rq_username, password=rq_password)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[91mWrong credentials used for default user. You can reset credentials using `bench create-rq-users` CLI and restart the server[0m
+Traceback (most recent call last):
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 225, in start_worker
+    redis_connection = get_redis_conn(username=rq_username, password=rq_password)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[91mWrong credentials used for default user. You can reset credentials using `bench create-rq-users` CLI and restart the server[0m
+Traceback (most recent call last):
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 225, in start_worker
+    redis_connection = get_redis_conn(username=rq_username, password=rq_password)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[91mWrong credentials used for default user. You can reset credentials using `bench create-rq-users` CLI and restart the server[0m
+Traceback (most recent call last):
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 86, in _run_code
+Traceback (most recent call last):
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    exec(code, run_globals)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    return _run_code(code, main_globals, None,
+  File "/opt/bitnami/python/lib/python3.10/runpy.py", line 86, in _run_code
+    click.Group(commands=commands)(prog_name="bench")
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    exec(code, run_globals)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    return self.main(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    rv = self.invoke(ctx)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    start_worker(
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 225, in start_worker
+    return callback(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 206, in start_worker
+    redis_connection = get_redis_conn(username=rq_username, password=rq_password)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    start_worker(
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 225, in start_worker
+    redis_connection = get_redis_conn(username=rq_username, password=rq_password)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    return self(f, *args, **kw)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    do = self.iter(retry_state=retry_state)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    raise self._exception
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    result = fn(*args, **kwargs)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "/opt/bitnami/erpnext/frappe-bench/apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.execute_command('PING')
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    return self.parse_response(conn, command_name, **options)
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    response = connection.read_response()
+  File "/opt/bitnami/erpnext/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+[91mWrong credentials used for default user. You can reset credentials using `bench create-rq-users` CLI and restart the server[0m
+[91mWrong credentials used for default user. You can reset credentials using `bench create-rq-users` CLI and restart the server[0m

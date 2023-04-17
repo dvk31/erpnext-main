@@ -1,0 +1,432 @@
+2023-04-17 03:33:07,885 ERROR scheduler Exception in Enqueue Events for Site erpnext
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 74, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 92, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 276, in get_jobs
+    q = get_queue(_queue)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 325, in get_queue
+    return Queue(generate_qname(qtype), connection=get_redis_conn(), is_async=is_async)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+2023-04-17 03:34:07,953 ERROR scheduler Exception in Enqueue Events for Site erpnext
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 74, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 92, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 276, in get_jobs
+    q = get_queue(_queue)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 325, in get_queue
+    return Queue(generate_qname(qtype), connection=get_redis_conn(), is_async=is_async)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+2023-04-17 03:35:07,995 ERROR scheduler Exception in Enqueue Events for Site erpnext
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 74, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 92, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 276, in get_jobs
+    q = get_queue(_queue)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 325, in get_queue
+    return Queue(generate_qname(qtype), connection=get_redis_conn(), is_async=is_async)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+2023-04-17 03:36:08,044 ERROR scheduler Exception in Enqueue Events for Site erpnext
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 74, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 92, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 276, in get_jobs
+    q = get_queue(_queue)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 325, in get_queue
+    return Queue(generate_qname(qtype), connection=get_redis_conn(), is_async=is_async)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+2023-04-17 03:37:08,090 ERROR scheduler Exception in Enqueue Events for Site erpnext
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 74, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 92, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 276, in get_jobs
+    q = get_queue(_queue)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 325, in get_queue
+    return Queue(generate_qname(qtype), connection=get_redis_conn(), is_async=is_async)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+2023-04-17 03:38:08,158 ERROR scheduler Exception in Enqueue Events for Site erpnext
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 74, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 92, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 276, in get_jobs
+    q = get_queue(_queue)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 325, in get_queue
+    return Queue(generate_qname(qtype), connection=get_redis_conn(), is_async=is_async)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+2023-04-17 03:39:08,225 ERROR scheduler Exception in Enqueue Events for Site erpnext
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 74, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 92, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 276, in get_jobs
+    q = get_queue(_queue)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 325, in get_queue
+    return Queue(generate_qname(qtype), connection=get_redis_conn(), is_async=is_async)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+2023-04-17 03:40:08,269 ERROR scheduler Exception in Enqueue Events for Site erpnext
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 74, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 92, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 276, in get_jobs
+    q = get_queue(_queue)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 325, in get_queue
+    return Queue(generate_qname(qtype), connection=get_redis_conn(), is_async=is_async)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+2023-04-17 03:41:08,336 ERROR scheduler Exception in Enqueue Events for Site erpnext
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 74, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 92, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 276, in get_jobs
+    q = get_queue(_queue)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 325, in get_queue
+    return Queue(generate_qname(qtype), connection=get_redis_conn(), is_async=is_async)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+2023-04-17 03:42:08,403 ERROR scheduler Exception in Enqueue Events for Site erpnext
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 74, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 92, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 276, in get_jobs
+    q = get_queue(_queue)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 325, in get_queue
+    return Queue(generate_qname(qtype), connection=get_redis_conn(), is_async=is_async)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+2023-04-17 03:43:08,469 ERROR scheduler Exception in Enqueue Events for Site erpnext
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 74, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 92, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 276, in get_jobs
+    q = get_queue(_queue)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 325, in get_queue
+    return Queue(generate_qname(qtype), connection=get_redis_conn(), is_async=is_async)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+
+2023-04-17 03:44:08,537 ERROR scheduler Exception in Enqueue Events for Site erpnext
+Traceback (most recent call last):
+  File "apps/frappe/frappe/utils/scheduler.py", line 74, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "apps/frappe/frappe/utils/scheduler.py", line 92, in enqueue_events
+    queued_jobs = get_jobs(site=site, key="job_type").get(site) or []
+  File "apps/frappe/frappe/utils/background_jobs.py", line 276, in get_jobs
+    q = get_queue(_queue)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 325, in get_queue
+    return Queue(generate_qname(qtype), connection=get_redis_conn(), is_async=is_async)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 349, in iter
+    return fut.result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/bitnami/python/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "apps/frappe/frappe/utils/background_jobs.py", line 363, in get_redis_conn
+    redis_connection = RedisQueue.get_connection(**cred)
+  File "apps/frappe/frappe/utils/redis_queue.py", line 24, in get_connection
+    conn.ping()
+  File "env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "env/lib/python3.10/site-packages/redis/client.py", line 901, in execute_command
+    return self.parse_response(conn, command_name, **options)
+  File "env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "env/lib/python3.10/site-packages/redis/connection.py", line 756, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+

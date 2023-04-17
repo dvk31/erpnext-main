@@ -10,3 +10,13 @@
 2023-04-17 03:23:02,727 INFO /opt/bitnami/erpnext/bin/bench worker --queue long
 2023-04-17 03:23:02,828 INFO /opt/bitnami/erpnext/bin/bench schedule
 2023-04-17 03:23:02,832 INFO /opt/bitnami/erpnext/bin/bench worker --queue short
+2023-04-17 03:37:02,928 INFO /opt/bitnami/erpnext/bin/bench worker --queue short
+2023-04-17 03:39:02,968 INFO /opt/bitnami/erpnext/bin/bench worker --queue default
+2023-04-17 03:39:03,020 INFO /opt/bitnami/erpnext/bin/bench worker --queue short
+2023-04-17 03:39:03,045 INFO /opt/bitnami/erpnext/bin/bench worker --queue long
+2023-04-17 03:41:03,005 INFO /opt/bitnami/erpnext/bin/bench worker --queue default
+2023-04-17 03:41:03,041 INFO /opt/bitnami/erpnext/bin/bench worker --queue short
+2023-04-17 03:41:03,060 INFO /opt/bitnami/erpnext/bin/bench worker --queue long
+2023-04-17 03:43:02,996 INFO /opt/bitnami/erpnext/bin/bench worker --queue long
+2023-04-17 03:43:03,054 INFO /opt/bitnami/erpnext/bin/bench worker --queue short
+2023-04-17 03:43:03,075 INFO /opt/bitnami/erpnext/bin/bench worker --queue default
