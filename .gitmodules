@@ -1,0 +1,12 @@
+[submodule "bench"]
+	path = bench
+	url = https://github.com/yourusername/bench.git
+[submodule "frappe-bench/apps/erpnext"]
+	path = frappe-bench/apps/erpnext
+	url = https://github.com/yourusername/erpnext.git
+[submodule "frappe-bench/apps/frappe"]
+	path = frappe-bench/apps/frappe
+	url = https://github.com/yourusername/frappe.git
+[submodule "frappe-bench/apps/payments"]
+	path = frappe-bench/apps/payments
+	url = https://github.com/yourusername/payments.git

@@ -1,0 +1,12 @@
+2023-04-17 03:20:39,843 INFO /opt/bitnami/erpnext/bin/bench config set-common-config -c redis_cache 'redis://localhost:13000'
+2023-04-17 03:20:40,211 INFO /opt/bitnami/erpnext/bin/bench config set-common-config -c redis_socketio 'redis://localhost:12000'
+2023-04-17 03:20:40,459 INFO /opt/bitnami/erpnext/bin/bench config set-common-config -c redis_queue 'redis://localhost:11000'
+2023-04-17 03:20:40,725 INFO /opt/bitnami/erpnext/bin/bench config set-common-config -c socketio_port '9000'
+2023-04-17 03:20:40,973 INFO /opt/bitnami/erpnext/bin/bench new-site --admin-password Q5EgmrSb4ty4 --db-name bitnami_erpnext --db-type mariadb --db-host 127.0.0.1 --db-port 3306 --mariadb-root-username root --mariadb-root-password Q5EgmrSb4ty4 erpnext
+2023-04-17 03:21:11,696 INFO /opt/bitnami/erpnext/bin/bench --site erpnext install-app erpnext
+2023-04-17 03:22:07,571 INFO /opt/bitnami/erpnext/bin/bench --site erpnext set-config host_name 'http://localhost'
+2023-04-17 03:22:41,817 INFO /opt/bitnami/erpnext/bin/bench setup redis
+2023-04-17 03:23:02,681 INFO /opt/bitnami/erpnext/bin/bench worker --queue default
+2023-04-17 03:23:02,727 INFO /opt/bitnami/erpnext/bin/bench worker --queue long
+2023-04-17 03:23:02,828 INFO /opt/bitnami/erpnext/bin/bench schedule
+2023-04-17 03:23:02,832 INFO /opt/bitnami/erpnext/bin/bench worker --queue short

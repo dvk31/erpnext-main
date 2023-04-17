@@ -1,0 +1,17 @@
+1113:C 17 Apr 2023 03:20:24.418 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1113:C 17 Apr 2023 03:20:24.418 # Redis version=7.0.10, bits=64, commit=00000000, modified=0, pid=1113, just started
+1113:C 17 Apr 2023 03:20:24.418 # Configuration loaded
+1113:M 17 Apr 2023 03:20:24.418 * monotonic clock: POSIX clock_gettime
+1113:M 17 Apr 2023 03:20:24.419 * Running mode=standalone, port=13000.
+1113:M 17 Apr 2023 03:20:24.419 # Server initialized
+1113:M 17 Apr 2023 03:20:24.420 * Ready to accept connections
+1113:M 17 Apr 2023 03:22:42.043 # User requested shutdown...
+1113:M 17 Apr 2023 03:22:42.043 * Removing the pid file.
+1113:M 17 Apr 2023 03:22:42.043 # Redis is now ready to exit, bye bye...
+1972:C 17 Apr 2023 03:22:42.073 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1972:C 17 Apr 2023 03:22:42.073 # Redis version=7.0.10, bits=64, commit=00000000, modified=0, pid=1972, just started
+1972:C 17 Apr 2023 03:22:42.073 # Configuration loaded
+1972:M 17 Apr 2023 03:22:42.073 * monotonic clock: POSIX clock_gettime
+1972:M 17 Apr 2023 03:22:42.074 * Running mode=standalone, port=13000.
+1972:M 17 Apr 2023 03:22:42.074 # Server initialized
+1972:M 17 Apr 2023 03:22:42.074 * Ready to accept connections

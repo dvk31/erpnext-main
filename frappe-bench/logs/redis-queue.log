@@ -1,0 +1,37 @@
+1169:C 17 Apr 2023 03:20:34.445 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1169:C 17 Apr 2023 03:20:34.445 # Redis version=7.0.10, bits=64, commit=00000000, modified=0, pid=1169, just started
+1169:C 17 Apr 2023 03:20:34.445 # Configuration loaded
+1169:M 17 Apr 2023 03:20:34.445 * monotonic clock: POSIX clock_gettime
+1169:M 17 Apr 2023 03:20:34.445 * Running mode=standalone, port=11000.
+1169:M 17 Apr 2023 03:20:34.445 # Server initialized
+1169:M 17 Apr 2023 03:20:34.446 * Ready to accept connections
+1169:M 17 Apr 2023 03:22:52.139 # User requested shutdown...
+1169:M 17 Apr 2023 03:22:52.139 * Saving the final RDB snapshot before exiting.
+1169:M 17 Apr 2023 03:22:52.143 * DB saved on disk
+1169:M 17 Apr 2023 03:22:52.143 * Removing the pid file.
+1169:M 17 Apr 2023 03:22:52.143 # Redis is now ready to exit, bye bye...
+2074:C 17 Apr 2023 03:22:52.173 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2074:C 17 Apr 2023 03:22:52.173 # Redis version=7.0.10, bits=64, commit=00000000, modified=0, pid=2074, just started
+2074:C 17 Apr 2023 03:22:52.173 # Configuration loaded
+2074:M 17 Apr 2023 03:22:52.173 * monotonic clock: POSIX clock_gettime
+2074:M 17 Apr 2023 03:22:52.174 * Running mode=standalone, port=11000.
+2074:M 17 Apr 2023 03:22:52.174 # Server initialized
+2074:M 17 Apr 2023 03:22:52.174 * Loading RDB produced by version 7.0.10
+2074:M 17 Apr 2023 03:22:52.174 * RDB age 0 seconds
+2074:M 17 Apr 2023 03:22:52.174 * RDB memory usage when created 1.04 Mb
+2074:M 17 Apr 2023 03:22:52.174 * Done loading RDB, keys loaded: 8, keys expired: 0.
+2074:M 17 Apr 2023 03:22:52.174 * DB loaded from disk: 0.000 seconds
+2074:M 17 Apr 2023 03:22:52.174 * Ready to accept connections
+2074:M 17 Apr 2023 03:27:53.052 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:27:53.053 * Background saving started by pid 4774
+4774:C 17 Apr 2023 03:27:53.059 * DB saved on disk
+4774:C 17 Apr 2023 03:27:53.059 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+2074:M 17 Apr 2023 03:27:53.153 * Background saving terminated with success
+2074:M 17 Apr 2023 03:32:54.050 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:32:54.050 * Background saving started by pid 5380
+5380:C 17 Apr 2023 03:32:54.050 # Failed opening the temp RDB file temp-5380.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:32:54.150 # Background saving error
+2074:M 17 Apr 2023 03:33:00.060 * 100 changes in 300 seconds. Saving...
+2074:M 17 Apr 2023 03:33:00.060 * Background saving started by pid 5381
+5381:C 17 Apr 2023 03:33:00.060 # Failed opening the temp RDB file temp-5381.rdb (in server root dir /opt/bitnami/erpnext/frappe-bench/config/pids) for saving: Permission denied
+2074:M 17 Apr 2023 03:33:00.161 # Background saving error

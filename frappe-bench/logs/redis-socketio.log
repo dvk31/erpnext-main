@@ -1,0 +1,24 @@
+1141:C 17 Apr 2023 03:20:29.422 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1141:C 17 Apr 2023 03:20:29.422 # Redis version=7.0.10, bits=64, commit=00000000, modified=0, pid=1141, just started
+1141:C 17 Apr 2023 03:20:29.422 # Configuration loaded
+1141:M 17 Apr 2023 03:20:29.423 * monotonic clock: POSIX clock_gettime
+1141:M 17 Apr 2023 03:20:29.423 * Running mode=standalone, port=12000.
+1141:M 17 Apr 2023 03:20:29.423 # Server initialized
+1141:M 17 Apr 2023 03:20:29.423 * Ready to accept connections
+1141:M 17 Apr 2023 03:22:47.087 # User requested shutdown...
+1141:M 17 Apr 2023 03:22:47.087 * Saving the final RDB snapshot before exiting.
+1141:M 17 Apr 2023 03:22:47.091 * DB saved on disk
+1141:M 17 Apr 2023 03:22:47.091 * Removing the pid file.
+1141:M 17 Apr 2023 03:22:47.091 # Redis is now ready to exit, bye bye...
+2023:C 17 Apr 2023 03:22:47.122 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2023:C 17 Apr 2023 03:22:47.122 # Redis version=7.0.10, bits=64, commit=00000000, modified=0, pid=2023, just started
+2023:C 17 Apr 2023 03:22:47.122 # Configuration loaded
+2023:M 17 Apr 2023 03:22:47.122 * monotonic clock: POSIX clock_gettime
+2023:M 17 Apr 2023 03:22:47.122 * Running mode=standalone, port=12000.
+2023:M 17 Apr 2023 03:22:47.122 # Server initialized
+2023:M 17 Apr 2023 03:22:47.123 * Loading RDB produced by version 7.0.10
+2023:M 17 Apr 2023 03:22:47.123 * RDB age 0 seconds
+2023:M 17 Apr 2023 03:22:47.123 * RDB memory usage when created 0.88 Mb
+2023:M 17 Apr 2023 03:22:47.123 * Done loading RDB, keys loaded: 0, keys expired: 0.
+2023:M 17 Apr 2023 03:22:47.123 * DB loaded from disk: 0.000 seconds
+2023:M 17 Apr 2023 03:22:47.123 * Ready to accept connections
